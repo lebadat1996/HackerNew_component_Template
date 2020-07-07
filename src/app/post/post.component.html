@@ -1,0 +1,6 @@
+<div>
+  <p>{{post.title}}</p>
+  <p>{{post.content}}</p>
+  <app-like (likeClicked)="incrementLike()" [like]="post.like"></app-like>
+  <app-comments [comments]="post.comments"></app-comments>
+</div>
